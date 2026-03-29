@@ -1,0 +1,28 @@
+{
+  "name": "filigranebf-backend",
+  "version": "1.0.0",
+  "description": "API backend FiligraneBF — Service de filigranage de documents",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Ulrich",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.1",
+    "helmet": "^8.1.0",
+    "multer": "^2.1.1",
+    "pdf-lib": "^1.17.1",
+    "sharp": "^0.34.5",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

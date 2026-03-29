@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: filigranebf-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: FRONTEND_URL
+        sync: false   # À définir dans le dashboard Render : URL de ton frontend Vercel
+      - key: MAX_FILE_SIZE_MB
+        value: 10
+      - key: RATE_LIMIT_WINDOW_MS
+        value: 60000
+      - key: RATE_LIMIT_MAX
+        value: 20
